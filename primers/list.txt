@@ -1,0 +1,54 @@
+107000	Multiplicom MASTR	IFU188_BRCAMASTR_Primerfile_v130744.txt
+407000	Multiplicom MASTR	IFU189_CFTRMASTRv2_Primerfile_v130745.txt
+307000	Multiplicom MASTR	IFU190_FAPMASTR_Primerfile_v130746.txt
+1307000	Multiplicom MASTR	IFU209_FMFMASTRv2_Primerfile_v130811.txt
+MARFAN	Multiplicom MASTR	IFU193_MARFANMASTR_Primerfile_v130749.txt
+ALPORT	Multiplicom MASTR	IFU194_ALPORTMASTR_Primerfile_v130750.txt
+#507000	Multiplicom MASTR	somatic1_plex1-MASTR-notags.txt
+607000	Multiplicom MASTR	EGFR_primer_seq.txt
+807000	Multiplicom MASTR	GIST_primer_seq.txt
+1407000	Nimblegen	biligene_random_primers.txt
+1507000	RAS	RAS_random_primers_somatic1p1_no_overlap.txt
+1607000	ADH	ADH_real_primers.txt
+1707000	MPC somatic1	somatic1-MASTR-notags-somatic1p1_half_olap.txt
+1907000	Multiplicom MASTR TP53	TP53-MASTR-notags.txt
+2107000	AmpliSeq	ampliseq_cardiac_arrhythmias_random_primers_no_overlap.txt
+2207000	AmpliSeq	ampliseq_cardiomyopathies_random_primers_no_overlap.txt
+3607000	Haloplex	cardiopathies_Nantes_random_primers.txt
+3707000	Multiplicom MASTR	somatic1_v2-MASTR-notags-somatic1p1_half_olap.txt
+3807000	AmpliSeq	Grenoble_IAD54213_AmpliSeq_target_ends.txt
+3907000	AmpliSeq	Grenoble_IAD52691_AmpliSeq_target_ends.txt
+4107000	Multiplicom MASTR	TruSight-One-May-2014_random_primers.txt
+4207000	TruSeq	SMP_SL-TruSeq.txt
+4307000	TruSight	TruSight-Cancer-May-2013_1000_random_primers.txt
+2907000	Multiplicom MASTR	MODY-MASTR-v130901-notags.txt
+4407000	AmpliSeq	BRCA_AmpliSeq_target_ends.txt
+2707000	Multiplicom MASTR	primerlist_HNPCCv1_MASTR.tab
+4507000	Multiplicom MASTR	primerlist_HNPCCv2_MASTRplus.tab
+4707000	TruSeq	BRCA_AKHWien-TruSeq.txt
+4807000	AmpliSeq	CFTR_AmpliSeq_target_ends.txt
+4907000	SureSelect	SureSelect_Dijon_random_primers.txt
+4007000	Haloplex	AML_HSA_random_primers.txt
+4607000	Multiplicom MASTR	BRCA_HC-primer.txt
+5007000	Qiagen_GeneRead	BRCA_GeneRead-primers.txt
+5107000	AmpliSeq	nephropathies_Lyon_AmpliSeq_target_ends.txt
+3407000	TruSeq	MAI_Montpellier_v2_random_primers.txt
+5207000	TruSeq	MPS_SL_ext-TruSeq-primers.txt
+5307000	TruSeq	TruRisk_Illumina_random_primers_100.txt
+5407000	SureSelect	TruRisk_SureSelect_random_primers_100.txt
+5507000	Multiplicom MASTR	Tumor_hotspot_MASTR_Plus-primers.txt
+5607000	Multiplicom MASTR	BRCA_Tumor-primers.txt
+2007000	TruSight	TruSight_Tumor-primers.txt
+5707000	Multiplicom MASTR	PED-primers.txt
+5807000	TruSight	TruSight_Myeloid-primers.txt
+5907000	TruSight	Cardio_NimbleGen_Lyon_random_primers.txt
+6007000	TruSight	TruSight_Cardio_random_primers.txt
+6107000	IDT	BRCAex_SG_IDT_v1_random_primers.txt
+6207000	Multiplicom MASTR	primers_MASTR_CFTR_rs397508229.txt
+3307000	Multiplicom MASTR	DMD-primers.txt
+6407000	Nimblegen	spastic_paraplegia_HPS_random_primers.txt
+6507000	AmpliSeq	AmpliSeq_Colon_Lung_Cancer_primers.txt
+6607000	IDT	HCS_M_v1_random_primers.txt
+6707000	IDT	HCS_S_v1_random_primers.txt
+6807000	IDT	HCS_XS_v1_random_primers.txt
+6907000	Multiplicom MASTR	HNPCC_FAP-primers.txt
