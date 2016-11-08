@@ -100,7 +100,7 @@ public class test
 
 		try{
 			String line;
-			BufferedReader reader = new BufferedReader(new FileReader("/Users/hongiiv/Downloads/primers/IFU188_BRCAMASTR_Primerfile_v130744.txt"));
+			BufferedReader reader = new BufferedReader(new FileReader("ngb_brca_primer.txt"));
 			//System.out.println("++++++++++++++++++");
 			while ((line = reader.readLine()) != null)
 			{
@@ -109,7 +109,7 @@ public class test
 				String line_b = revcomp(line.split("\t")[1]);
 				tree.add(line_a.getBytes(), line_a);
 				tree.add(line_b.getBytes(), line_b);
-				System.out.println(line_a+" "+line_b);
+				//System.out.println(line_a+" "+line_b);
 				//System.out.println(line.split("\t")[1]+" "+revcomp(line.split("\t")[1]));
 				priSize++;
 			}
@@ -125,13 +125,13 @@ public class test
 		//System.out.println(tree.toString());
 
 		int nReads = 1;
-		int tReads = 1;
+		int tReads = 0;
 		double nFound = 0.0;
 		int maxReads = 4;
 		String line;
 		try{
 			Set termsThatHit = new HashSet();
-			BufferedReader reader = new BufferedReader(new FileReader("/Users/hongiiv/Illumina/160223_M03987_0015_000000000-AKDRA/Data/Intensities/BaseCalls/"+args[0]));
+			BufferedReader reader = new BufferedReader(new FileReader(args[0]));
 			//while ((nReads < maxReads) && (line  != null))
                                 char A = "A".charAt(0);
                                 char T = "T".charAt(0);
@@ -142,9 +142,11 @@ public class test
                                 Arrays.sort(skipPosIndicators);
 			while ((line = reader.readLine()) != null)
 			{
+				tReads++;
 
                                 char a = line.charAt(0);
 				if (a == A || a==T||a==G||a==C||a==N ){
+                                if (! line.contains("@")) {
 				boolean isSkip = false;
 				for (int j =0; j<10;j++){
 					//System.out.println(j);
@@ -160,22 +162,23 @@ public class test
 				//System.out.println(line);
 				Iterator iter = tree.search(line.getBytes());
 				if(!iter.hasNext()){
-					System.out.println(tReads+" "+line);
+					//System.out.println(tReads+" "+line);
 					nFound++;
 				}
 				while(iter.hasNext()){ 
 				//for (Iterator iter = tree.search(line.getBytes()); iter.hasNext();) {
 					SearchResult result = (SearchResult) iter.next();
 					//System.out.println(result.getOutputs());
-					//System.out.println(line);
+					System.out.println(line);
 					//System.out.println("line at: "+(nReads/4+1)+" Found at index: " + result.getLastIndex());
-					//System.out.println("line at: "+nReads+" Found at index: " + result.getLastIndex());
+					System.out.println("line at: "+tReads+" Found at index: " + result.getLastIndex());
+ 					System.out.println(result.getOutputs());
 					termsThatHit.addAll(result.getOutputs());
 				}
 				nReads++;
 				}
 				}
-				tReads++;
+			}
 			}
 			System.out.println("++++++++++++++++++++++++++++++");
 			System.out.println(termsThatHit);

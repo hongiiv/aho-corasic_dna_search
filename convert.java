@@ -89,8 +89,9 @@ public class convert
 
 	public static void main(String args[]) {
 		//System.out.println("hello");
-		AhoCorasick tree = new AhoCorasick();
+		//AhoCorasick tree = new AhoCorasick();
 		String terms = args[0];
+		System.out.println(terms);
 		System.out.println(revcomp(terms));
 
 	}
